@@ -2,8 +2,9 @@ language: node_js
 node_js:
   - "4"
 before_script:
-  - npm install -g gulp-cli
-script: gulp
+  "scripts": {
+  "test": "vows --spec"
+},
 env:
   - CXX=g++-4.8
 addons:
